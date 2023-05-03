@@ -6,93 +6,48 @@ MidJourney Styles is an AI-powered image generator that allows you to create stu
 
 ## Midjourney Parameters 
 
-🎇 **--stylize Parameter**
+The parameter list below explains the various options and their examples that can be used with Midjourney, an image generation tool:
 
-The Stylize Parameter will make your image more stylized. This parameter is available in MidJourney V3, V4, and V5.
+### Light:
+Midjourney uses parameters that are added to the end of the prompt and change how an image generates. You can add multiple parameters to each prompt. Below are some examples of Midjourney parameters:
 
-Here is a list of stylize parameters available in MidJourney V4:
-```
---stylize 0
---stylize 100
---stylize 200
---stylize 300
---stylize 400
---stylize 500
---stylize 600
---stylize 700
---stylize 800
---stylize 900
---stylize 1000
-```
+### Basic Parameters:
 
-Example usage: --stylize 500
+* Aspect Ratios: --aspect or --ar (e.g., --aspect 1:1 changes the aspect ratio to a square).
+* Chaos: --chaos <number 0-100> (e.g., --chaos 50 changes how varied the results will be).
+* No: --no (e.g., --no plants removes plants from the image).
+* Quality: --quality <.25, .5, 1, or 2> or --q <.25, .5, 1, or 2> (e.g., --quality .5 sets the rendering quality to a lower level).
+* Repeat: --repeat <1-40> or --r <1-40> (e.g., --repeat 3 creates three jobs from a single prompt).
+* Seed: --seed <integer between 0-4294967295> (e.g., --seed 12345 uses 12345 as the seed number for generating the initial image grids).
+* Stop: --stop <integer between 10-100> (e.g., --stop 30 finishes a job partway through the process).
+* Style: --style <4a, 4b, or 4c> or --style <cute, expressive, or scenic> (e.g., --style 4b switches to Midjourney Model Version 4b).
+* Stylize: --stylize <number> or --s <number> (e.g., --stylize 500 applies Midjourney's default aesthetic style to the image more strongly).
+* Tile: --tile (e.g., --tile generates images that can be used as repeating tiles to create seamless patterns).
+* Uplight: --uplight (e.g., --uplight uses an alternative "light" upscaler when selecting the U buttons).
+* Upbeta: --upbeta (e.g., --upbeta uses an alternative beta upscaler when selecting the U buttons).
 
-💎 **--quality Parameter**
+#### Default Values (Model Version 4):
 
-The Quality Parameter will define how long the AI spends creating your image. This parameter is available in MidJourney V1, V2, V3, V4, and Niji Journey.
+* Aspect Ratio: 1:1
+* Chaos: 0
+* Quality: 1
+* Seed: Random
+* Stop: 100
+* Style: 4c
+* Stylize: 100
 
-Here is a list of quality parameters available in MidJourney V4:
-```
---quality 0.25
---quality 0.5
---quality 1 (default)
---quality 2
---quality 5
-```
-Example usage: --quality 2
+#### Default Values (Model Version 5):
 
-🌪 **--chaos Parameter**
+* Aspect Ratio: 1:1
+* Chaos: 0
+* Quality: 1
+* Seed: Random
+* Stop: 100
+* Stylize: 100
 
-The Chaos Parameter will add more "randomness" to your images. In practice, it seems to make them more stylized. This parameter is available in MidJourney V1, V2, V3, V4, and Niji Journey.
+#### Model Version Parameters:
 
-Here is a list of chaos parameters available in MidJourney V4:
-```
---chaos 0
---chaos 10
---chaos 20
---chaos 30
---chaos 40
---chaos 50
---chaos 60
---chaos 70
---chaos 80
---chaos 90
---chaos 100
-```
-Example usage: --chaos 50
-
-🚫 **--no Parameter**
-
-The No Parameter will tell the AI to prevent adding a specific thing to an image. This parameter is available in MidJourney V1, V2, V3, and V4.
-
-Here is an example of how to use this parameter to remove the "sphere" from an image:
-
-sphere --no sphere
-
-You can also remove multiple items at once by using the format --no input1, input2. For example:
-
-sphere, Colorful --no red, pink
-
-🔲 **--tile Parameter**
-
-The Tile Parameter allows you to create a tiled 3x3 grid of the image. This parameter is available in MidJourney V1, V2, V3, and V5.
-
-Here is an example of how to use this parameter:
-
-sphere --tile
-
-🏋️‍ **Image Weight Comparison**
-
-The Image Weight Parameter changes how much an inputted image will affect the generated image. This parameter is available in MidJourney V2 and V3.
-
-Here is an example of how to use this parameter:
-
-Bubble Design --iw 0.5
-
-⌨ **Prompt Format Comparison**
-
-The Prompt Format Parameter allows you to customize the format of the prompt you use to generate images. This parameter is available in MidJourney V1, V2, V3, and V4.
-
-Here is an example of how to use this parameter:
-
-`<style> - <style-2>`
+* Niji: --niji (e.g., --niji switches to an alternative model focused on anime style images).
+* High Definition: --hd (e.g., --hd uses an early alternative model that produces larger, less consistent images).
+* Test: --test (e.g., --test uses the Midjourney special test model).
+* Testp: --testp (e.g., --testp uses the Midjourney special photography-focused test model).
