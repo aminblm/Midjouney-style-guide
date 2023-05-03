@@ -4,6 +4,8 @@ A compact style guide for Midjourney.
 
 MidJourney Styles is an AI-powered image generator that allows you to create stunning images by using a variety of parameters. In this guide, we will provide a list of the parameters and what they mean, along with examples for each of them.
 
+## Midjourney Parameters 
+
 🎇 **--stylize Parameter**
 
 The Stylize Parameter will make your image more stylized. This parameter is available in MidJourney V3, V4, and V5.
