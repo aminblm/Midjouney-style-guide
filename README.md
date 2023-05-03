@@ -93,4 +93,4 @@ The Prompt Format Parameter allows you to customize the format of the prompt you
 
 Here is an example of how to use this parameter:
 
-<style> - <style-2>
+`<style> - <style-2>`
